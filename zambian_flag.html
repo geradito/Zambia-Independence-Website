@@ -1,0 +1,154 @@
+<html>
+ <head> 
+  <title>Happy Independence Day</title> 
+  <meta name="description" content="National Flag Using Html &amp; CSS"> 
+  <meta name="keywords" content="Happy Independence Day"> 
+  <meta name="author" content="YourFirstName YourLastName"> 
+  
+  <style>
+      body {
+          background: #ccc;
+        }
+    
+      .container {
+      /* Make Flag at the center of the container */
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+      }
+
+      /* flag  */
+      .flag {
+        background: #138808;
+        width: 500px;
+        height: 300px;
+      }
+
+      /* color stripe */
+      .stripe{
+        width: 60px;
+        height: 170px;
+        display: inline-block;
+        float: right;
+      }
+      
+      /* red Stripe */
+      #red {
+        background: #FF0000;
+      }
+
+      /* black Stripe */
+      #black {
+        background: black;
+      }
+
+      /* orange Stripe */
+      #orange {
+        background: orange;
+      }
+
+      #eagle-stripe{
+        width: 500px;
+        float: left;
+      }
+
+      /* eagle Image */
+      .eagle {
+        height: 70px;
+        width: 70px;
+        float: right;
+        padding-right: 60px;
+      }
+
+      /* inlarge eagle Image  when hover with mouse*/
+      .eagle:hover{
+        -webkit-transform:scale(2);
+        -moz-transform:scale(2);
+        -o-transform:scale(2);
+        transform:scale(2);
+      }
+
+      /* Patriotic Message */
+      .message {
+        text-align: center;
+      }
+      /* blinking effect on number of years */
+      .blink {
+        float: left;
+        padding-left:20px;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+
+      /* Tooltip container */
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
+
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+      
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+      }
+
+      /* Show the tooltip text when you mouse over the tooltip container */
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+  </style> 
+ </head> 
+
+ <body> 
+  <center>
+    <h1>Independence Website for Zambia</h1>
+  </center>
+  <div class="container"> 
+   <!--Flag--> 
+   <div> 
+    <div class="flag"> 
+     <marquee behavior="alternate"> 
+      <h4>Proud to be a Zambian</h4> 
+     </marquee> 
+     <div id="eagle-stripe">
+      <h2 class="blink">58 years</h2>
+      <img class="eagle" src="http://www.clker.com/cliparts/X/P/C/q/P/H/zambie-eagle.svg">
+     </div>
+     <div id="orange" class="stripe tooltip"><span class="tooltiptext">Orange for the minirals</span></div>
+     <div id="black" class="stripe tooltip"><span class="tooltiptext">Black for the colour of our skin</span></div>
+     <div id="red" class="stripe tooltip"><span class="tooltiptext">Red for the blood that was shade for independence</span></div>     
+    </div> 
+   </div> 
+  </div> 
+  <!--Message--> 
+  <h3 class="message">I Love ZAMBIA</h3> 
+  <h2> 
+   <center>
+     Happy Independence Day on 24<sup>th</sup> October 2022
+   </center>
+  </h2> 
+  <marquee>
+    <h2>By Gerald Chinyama</h2> 
+  </marquee>
+ </body>
+</html>
